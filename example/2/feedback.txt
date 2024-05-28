@@ -1,0 +1,35 @@
+Let's evaluate the code according to the provided criteria:
+
+1. **Compilation Error:**
+   - There is a `return` statement outside a function or method, which will result in a syntax error.
+
+2. **Functional Correctness:**
+   - At first glance, the logic of the code seems to be sound. It's checking whether the videos can be grouped in a way such that the sum of durations in each group is equal. However, due to the aforementioned error, the program will not run successfully.
+
+3. **Algorithm Efficiency:**
+   - The code's complexity is O(n), where n is the number of videos. This is because it goes through the list of videos once.
+   - This is quite efficient given the problem constraints.
+
+4. **Conciseness:**
+   - The code could be more concise by using the `input()` function and by removing unnecessary logic.
+
+5. **Code Judgment Structure Simplification:**
+   - The structure is fairly simple, but the conditions checking for the correctness of the solution can be combined to make the code more concise.
+
+6. **Cyclomatic Complexity:**
+   - This code does not contain functions. If the whole code is considered to be in a main function, the cyclomatic complexity is: V(G) = 1(if) + 1(for) + 1(if) + 1(elif) + 1(if) + 1(for) + 1 = 7, which is less than 10, so the cyclomatic complexity is small.
+
+7. **Cognitive Complexity:**
+   - The code is relatively straightforward, and the logic flows linearly. However, using more descriptive variable names and adding comments could help reduce cognitive complexity.
+
+8. **Bad Smells:**
+   - Usage of `sys.stdin.readline()` instead of `input()`.
+   - Variable names like `idx` and `cur` could be more descriptive.
+   - Multiple checks for the solution's correctness can be simplified.
+   - Lack of comments describing the logic.
+
+**Recommendations:**
+1. Replace `sys.stdin.readline()` with `input()`.
+2. Remove the `return` statements outside functions.
+3. Combine conditions checking for solution correctness.
+4. Add comments and improve variable naming for clarity.
