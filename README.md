@@ -53,7 +53,7 @@ Data statistic is shown in this Table.
 
 ```
 python finetune.py \
---base_model '../CodeLlama-7b-Instruct-hf' \
+--base_model 'codellama/CodeLlama-7b-Instruct-hf' \
 --data_path '../dataset/train.jsonl' \
 --output_dir '../output' \
 --batch_size 256 \
@@ -67,7 +67,7 @@ python finetune.py \
 ```
 python inference.py \
 --load_8bit \
---base_model '../CodeLlama-7b-Instruct-hf' \
+--base_model 'codellama/CodeLlama-7b-Instruct-hf' \
 --lora_weights '../output'
  
 ```
