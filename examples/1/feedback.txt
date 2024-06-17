@@ -12,7 +12,7 @@ The algorithm provided is relatively efficient for the problem constraints. The 
 **4. Is the code too long or not concise enough?**
 The code is concise for the given problem. It sticks to the problem's requirements without unnecessary additions.
 
-**5. Can the code judgment structure be simplified?**
+**5. Can the code logic structure be simplified?**
 The structure seems clear, with the outer loop iterating over the test cases and the inner loops focusing on finding a potential swap.
 
 **6. What is the cyclomatic complexity of the code? Is it too high?**

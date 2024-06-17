@@ -13,7 +13,7 @@ Let's evaluate the code according to the provided criteria:
 4. **Conciseness:**
    - The code could be more concise by using the `input()` function and by removing unnecessary logic.
 
-5. **Code Judgment Structure Simplification:**
+5. **Code Logic Structure Simplification:**
    - The structure is fairly simple, but the conditions checking for the correctness of the solution can be combined to make the code more concise.
 
 6. **Cyclomatic Complexity:**
