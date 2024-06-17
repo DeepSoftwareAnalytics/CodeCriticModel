@@ -16,9 +16,23 @@ Our contributions can be summarized as follows:
 ## Source code 
 ### Environment
 ```
-conda create -n CoQual python=3.6 -y
+conda create -n CoQual python=3.10.13
 conda activate CoQual
-pip install torch==1.10  transformers==4.12.5 seaborn==0.11.2 fast-histogram nltk==3.6.5 networkx==2.5.1 tree_sitter tqdm prettytable gdown more-itertools tensorboardX sklearn  
+
+# CUDA 11.7
+pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2
+
+# transformers 4.34.1
+pip install transformers==4.34.1
+
+# peft 0.6.2
+pip install peft==0.6.2
+
+# bitsandbytes 0.42.0
+pip install bitsandbytes==0.42.0
+
+pip install accelerate==0.24.1 appdirs==1.4.4 loralib==0.1.2 black==23.11.0 datasets==2.14.6 fire==0.5.0 sentencepiece==0.1.99 jsonlines==4.0.0
+ 
 ```
 
 ### Data
@@ -31,29 +45,32 @@ Data statistic is shown in this Table.
 
 | Train | Test  | 
 | :------: | :----: |
-|  24,927  | 1,400  | 
+|  1,274  | 8,392  | 
 
 
 #### Fine-tuning
 
 
 ```
-lang=java
-bash run_fine_tune.sh $lang 
+python finetune.py \
+--base_model '../CodeLlama-7b-Instruct-hf' \
+--data_path '../dataset/train.jsonl' \
+--output_dir '../output' \
+--batch_size 256 \
+--micro_batch_size 16 \
+--num_epochs 2 \
+--val_set_size 0.1
+
 ```
 #### Reference
 
 ```
-lang=python
-bash run_zero-shot.sh $lang 
+python inference.py \
+--load_8bit \
+--base_model '../CodeLlama-7b-Instruct-hf' \
+--lora_weights '../output'
+ 
 ```
-### Results	
-
-#### The Model Evaluated with MRR 
-
-| Model          |   Ruby    | Javascript |    Go     |  Python   |   Java    |    PHP    |  Avg.  |
-| -------------- | :-------: | :--------: | :-------: | :-------: | :-------: | :-------: | :-------: |
-| CoCoSoDa | **0.818**| **0.764**| **0.921** |**0.757**| **0.763**| **0.703** |**0.788**|
 
 ## Appendix
 
