@@ -1,4 +1,4 @@
-# Codecritic: Towards Effective Code Quality Evaluation with Large Language Models: An Experimental Study and Beyond
+# CodeCritic: Towards Effective Code Quality Evaluation with Large Language Models: An Experimental Study and Beyond
 
 We conduct an extensive experimental study to explore the potential of LLMs for comprehensively evaluating generated code. We then propose a novel approach for code quality evaluation using LLMs.
 
@@ -6,11 +6,11 @@ We conduct an extensive experimental study to explore the potential of LLMs for 
 
 Our contributions can be summarized as follows:
 
-* We construct a high-quality open-source critique dataset CoQualEval with eight-dimensional critiques on code quality including correctness, efficiency, and readability.
+* We construct a high-quality open-source critique dataset CodeCriticData with eight-dimensional critiques on code quality including correctness, efficiency, and readability.
 
-* We present CoQuaLlama, a novel approach for code quality evaluation using large language models, which can generate useful critiques on code quality and help code optimization.
+* We present CodeCritic, a novel approach for code quality evaluation using large language models, which can generate useful critiques on code quality and help code optimization.
 
-* We conduct extensive experiments including human evaluation to verify the effectiveness of CoQuaLlama. We also experiment with five programming languages and reveal the cross-language generalizability of CoQuaLlama.
+* We conduct extensive experiments including human evaluation to verify the effectiveness of CodeCritic. We also experiment with five programming languages and reveal the cross-language generalizability of CodeCritic.
 
 
 ## Source code 
