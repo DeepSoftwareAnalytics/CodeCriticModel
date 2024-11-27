@@ -1,4 +1,4 @@
-# CodeCritic: Towards Effective Code Quality Evaluation with Large Language Models: An Experimental Study and Beyond
+# CodeCritic: Towards Effective Code Quality Evaluation with Large Language Models
 
 We conduct an extensive experimental study to explore the potential of LLMs for comprehensively evaluating generated code. We then propose a novel approach for code quality evaluation using LLMs.
 
