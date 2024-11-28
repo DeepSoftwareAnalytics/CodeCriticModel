@@ -8,9 +8,11 @@ Our contributions can be summarized as follows:
 
 * We construct a high-quality open-source critique dataset CodeCriticData with eight-dimensional critiques on code quality including correctness, efficiency, and readability.
 
-* We present CodeCritic, a novel approach for code quality evaluation using large language models, which can generate useful critiques on code quality and help code optimization.
+* We conduct an extensive empirical study using CodeCriticData to assess the code quality evaluation ability of existing mainstream LLMs.
 
-* We conduct extensive experiments including human evaluation to verify the effectiveness of CodeCritic. We also experiment with five programming languages and reveal the cross-language generalizability of CodeCritic.
+* We present CodeCritic, a novel approach for code quality evaluation using large language models, which can generate better code quality critiques.
+
+*  We conduct extensive experiments to verify the effectiveness of CodeCritic, including both automated and human evaluation. Additionally, we test CodeCritic across five programming languages, demonstrating its cross-language generalizability.
 
 
 ## Source code 
